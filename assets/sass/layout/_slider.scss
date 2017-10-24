@@ -89,6 +89,7 @@
   border: none;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 
   &:hover::before, &:hover::after{
     background-color: rgba(255, 255, 255, 0.8);
@@ -228,7 +229,9 @@
   }
 }
 
-
+.slider-mini {
+  margin-bottom: 35px;
+}
 
 @media (max-width: 1258px) {
   .slider__wrapper {
@@ -358,28 +361,3 @@
   }
 }
 
-
-//.ex parent {
-//    position: relative;
-//    width: 200px;
-//    height: 350px;
-//    background-color: aqua;
-//    margin: 0 auto;
-//    overflow: hidden;
-//
-//  span red block {
-//    position: absolute;
-//    display: block;
-//    width: 131px;
-//    height: 53px;
-//    background-color: red;
-//    color: #fff;
-//    transform: rotate(-43deg);
-//    left: -20%;
-//    top: -15px;
-//    text-align: center;
-//    padding-top: 29px;
-//    padding-right: 19px;
-//    text-transform: uppercase;
-//  }
-//}
