@@ -1,3 +1,9 @@
+.text-properties {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  background-color: green; }
+
 * {
   box-sizing: border-box; }
 
@@ -772,8 +778,9 @@ ul {
   box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.15), -1px 2px 1px 0px rgba(0, 0, 0, 0.15);
   visibility: hidden;
   opacity: 0; }
-  .featured-products__item--appearing a:hover {
-    opacity: 0.5; }
+
+a:hover {
+  opacity: 0.5; }
 
 .rounded_block {
   display: block;
@@ -929,6 +936,9 @@ ul {
       text-align: right;
       color: #b0b0b0;
       padding-bottom: 15px; }
+      .twitter__item p:last-child a {
+        text-decoration: none;
+        color: #898989; }
     .twitter__item p span {
       color: #fe5252; }
   .twitter__item:last-child p {
@@ -950,7 +960,7 @@ ul {
     margin-bottom: 10px;
     cursor: pointer; }
     .socials__item:nth-child(2) p:hover {
-      opacity: 0.8; }
+      opacity: 0.5; }
     .socials__item:nth-child(2) p:last-child {
       margin-bottom: 0;
       margin-top: 10px;
@@ -990,7 +1000,10 @@ ul {
       height: 63px;
       background: url(../img/fb-1.jpg) top left no-repeat;
       background-size: cover;
-      border: 3px solid #fff; }
+      border: 3px solid #fff;
+      transition: opacity 500ms; }
+      .facebook__item span:first-child:hover {
+        opacity: 0.5; }
       .facebook__item span:first-child a {
         display: block;
         height: 100%; }
@@ -1007,5 +1020,104 @@ ul {
 
 .facebook__item:nth-child(3n) {
   margin-right: 0; }
+
+.socials__item:nth-child(3) {
+  padding: 0 17px 0 40px; }
+  .socials__item:nth-child(3) p:first-child {
+    font: 11px/20px cursive;
+    color: #666666;
+    margin-bottom: 25px; }
+  .socials__item:nth-child(3) p:last-child {
+    padding-bottom: 14px;
+    border-bottom: 1px dashed #dbdbdb;
+    font: 10px solid sans-serif;
+    color: #fe5252;
+    text-transform: uppercase;
+    text-align: right; }
+
+.review__item:last-child p:last-child {
+  border: 0; }
+
+.review__item:nth-child(2) p:first-child,
+.review__item:nth-child(3) p:first-child {
+  margin-top: 10px; }
+
+.review__item:last-child p:first-child,
+.review__item:nth-child(2) p:first-child {
+  margin-bottom: 10px; }
+
+@media (max-width: 964px) {
+  .socials__list {
+    flex-wrap: wrap; }
+
+  .socials__item:nth-child(1) {
+    flex-basis: 49%; }
+
+  .socials__item:nth-child(2) {
+    flex-basis: 49%; }
+
+  .socials__item:nth-child(3) {
+    flex-basis: 100%;
+    order: 3; }
+
+  .socials__title {
+    margin-left: 40px; }
+
+  .twitter__item {
+    padding-left: 80px; }
+
+  .twitter__item::before {
+    left: 40px; }
+
+  .facebook__title {
+    margin-left: 0;
+    text-align: left; }
+
+  .facebook__list {
+    justify-content: space-around; }
+
+  .socials__item:nth-child(2) {
+    border-right: 0; }
+
+  .facebook__item:nth-child(3n) {
+    margin-right: 21px; }
+
+  .socials__item:last-child {
+    margin-top: 20px; }
+
+  .socials__item:nth-child(3) p:first-child {
+    text-align: center;
+    margin-bottom: 19px; }
+
+  .socials__item:nth-child(3) p:last-child {
+    text-align: center; }
+
+  .review__item:last-child p:last-child {
+    border-bottom: 1px dashed #dbdbdb; }
+
+  .rumours__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; } }
+@media (max-width: 620px) {
+  .socials__item:nth-child(1) {
+    order: 2;
+    flex-basis: 100%;
+    margin-top: 35px; }
+
+  .socials__item:nth-child(3) {
+    order: 3; }
+
+  .socials__item:nth-child(2) {
+    flex-basis: 100%; }
+
+  .facebook__item {
+    margin-right: 10px; }
+
+  .facebook__item:nth-child(3n) {
+    margin-right: 10px; }
+
+  .facebook__list {
+    justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */
