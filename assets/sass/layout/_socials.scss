@@ -1,5 +1,5 @@
 .socials {
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .socials__list {
@@ -294,6 +294,7 @@
 
 	.socials__item:nth-child(3) {
 		order: 3;
+		padding: 0 20px 0 20px;
 	}
 
 	.socials__item:nth-child(2) {
@@ -310,5 +311,29 @@
 
 	.facebook__list {
 		justify-content: center;
+	}
+
+	.review__item:last-child p:last-child {
+    border-bottom: 0;
+	}
+
+	.twitter__item::before {
+    left: 20px;
+	}
+
+	.twitter__item {
+    padding-left: 60px;
+	}
+
+	.twitter__item {
+    padding: 0 20px 0 60px;
+	}
+
+	.facebook__list {
+    justify-content: space-between;
+	}
+
+	.socials__item:nth-child(2) {
+    padding: 0 20px;
 	}
 }
