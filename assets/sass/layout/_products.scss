@@ -244,7 +244,6 @@
 	margin: auto;
   text-align: center;
   padding-top: 20px;
-  font-size: 15px;
   font-family: sans-serif;
 }
 
@@ -296,23 +295,6 @@
 	font-size: 11px;
 	background-color: #fff;
 
-	&:hover {
-	&::before {
-			opacity: 0.5;
-		}
-	}
-
-	&::before {
-		content: "";
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		background: url("../img/house.svg") top center no-repeat;
-		left: 13px;
-    bottom: 21px;
-    cursor: pointer;
-	}
-
 	a {
 		color: #898989;
 		text-decoration: none;
@@ -342,6 +324,21 @@
 
 .featured-products__item:last-child {
 	display: none;
+}
+
+.featured-products__wishlist > a {
+	position: relative;
+}
+
+.featured-products__wishlist > a::before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url(../img/house.svg) top center no-repeat;
+	left: -3px;
+	bottom: -1px;
+	cursor: pointer;
 }
 
 @media (max-width: 964px) {
