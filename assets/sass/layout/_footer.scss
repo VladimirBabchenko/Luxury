@@ -1,0 +1,270 @@
+.page-footer__main-block {
+	padding: 30px 0 40px 0;
+	background-color: #efefef;
+	border-top: 1px solid #e3e3e3;
+}
+
+.page-footer__copyright {
+	background-color: #292929;
+}
+
+.page-footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	a {
+		font: 11px/25px sans-serif;
+		text-decoration: none;
+		color: #6f6f6f;
+	}
+
+	h3 {
+		padding-bottom: 12px;
+		border-bottom: 1px solid rgba(220, 217, 217, 0.5);
+		box-shadow: 0 1px 0 #fff;
+		font: 15px/18px sans-serif;
+		text-transform: uppercase;
+		color: #4c4c4c;
+	}
+
+	ul {
+		padding-top: 20px;
+		display: block;
+	}
+
+	.newsletter-content {
+		line-height: 16px;
+		padding-bottom: 20px;
+		@extend ul;
+		@extend a;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	a[href ^= "tel"] {
+		font-size: 13px;
+		font-family: cursive;
+		font-style: italic;
+		@extend .newsletter-content;
+	}
+}
+
+.page-footer__item {
+	flex-basis: 164px;
+	width: 164px;
+}
+
+.page-footer__newsletter {
+	
+	form {
+		display: flex;
+		height: 25px;
+	}
+
+	input {
+		width: 0;
+		flex-grow: 1;
+		padding-left: 10px;
+		font-size: 11px;
+		color: #cdcdcd;
+		font-style: italic;
+		border: 0;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+	}
+
+	button {
+		flex-basis: 30px;
+		margin-left: auto;
+		width: 30px;
+		padding: 0;
+		background: url("../img/sprite.png") -12px -621px no-repeat;
+		border: 0;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+		cursor: pointer;
+	}
+}
+
+.page-footer__cards {
+	display: flex;
+}
+
+.page-footer__cards a {
+	font-size: 0;
+	width: 37px;
+	height: 23px;
+	margin-right: 8px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+		
+		&:nth-child(1) {
+			background: url("../img/sprite.png") -14px -178px;
+		}
+
+		&:nth-child(2) {
+			background: url("../img/sprite.png") -15px -232px;
+		}
+
+		&:nth-child(3) {
+			background: url("../img/sprite.png") -14px -287px;
+		}
+
+		&:nth-child(4) {
+			background: url("../img/sprite.png") -13px -346px;
+		}    
+}
+
+.copyright__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	font: 12px/25px sans-serif;
+	color: #898989;
+
+	span {
+		color: #fe5858;
+	}
+}
+
+.footer__socials {
+	display: flex;
+
+	a {
+		font-size: 0;
+		width: 20px;
+		height: 20px;
+		margin-right: 25px;
+		background-color: #fff;
+
+		&:nth-child(1) {
+			background: url("../img/sprite.png") -12px -397px;
+		}
+
+		&:nth-child(2) {
+			background: url("../img/sprite.png") -12px -437px;
+		}
+
+		&:nth-child(3) {
+			background: url("../img/sprite.png") -12px -482px;
+		}
+
+		&:nth-child(4) {
+			background: url("../img/sprite.png") -12px -523px;
+		}
+
+		&:nth-child(5) {
+			background: url("../img/sprite.png") -12px -573px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.copyright__wrapper {
+	padding: 10px 15px;
+}
+
+@media (max-width: 964px) {
+	.page-footer__wrapper {
+		flex-wrap: wrap;
+		justify-content: space-around;
+    text-align: center;
+	}
+
+	.page-footer__newsletter {
+		flex-basis: 45%;
+    text-align: center;
+    margin-bottom: 30px;
+
+    form {
+    	justify-content: center;
+    }
+	}
+
+	.page-footer__wrapper .newsletter-content {
+		padding: 10px 0;
+	}
+
+	.page-footer__information {
+		flex-basis: 45%;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 668px) {
+	.page-footer__item {
+		flex-basis: 100%;
+		margin-bottom: 20px;
+
+		ul {
+			display: flex;
+			justify-content: center;
+
+			li {
+				margin-right: 25px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.page-footer__main-block ul {
+		padding-top: 10px;
+	}
+
+	.page-footer__cards {
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.page-footer__newsletter input {
+		flex-grow: 0;
+		flex-basis: 50%;
+	}
+
+	.page-footer__newsletter button {
+		margin: inherit;
+	}
+
+	.page-footer__wrapper a {
+		line-height: 16px;
+	}
+
+	.copyright__wrapper {
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+    	text-align: center;
+    	margin-top: 10px;
+    	order: 1;
+    }
+	}
+
+	.footer__socials {
+		margin: auto;
+	}
+
+	.page-footer__main-block {
+		padding-bottom: 15px;
+	}
+
+	.socials {
+    margin-bottom: 15px;
+	}
+
+	.page-footer__main-block {
+    padding-top: 20px;
+	}
+
+	.page-footer__wrapper h3 {
+		margin-top: 10px;
+	}
+}
