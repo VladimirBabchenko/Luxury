@@ -1,0 +1,22 @@
+.breadcrumbs {
+	margin-bottom: 27px;
+	padding: 20px 0;
+	border-bottom: 1px solid #eaeaea;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+	background-color: #f4f4f4;
+}
+
+.breadcrumbs a, span {
+	font-size: 13px;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #686868;
+}
+
+.breadcrumbs a:hover {
+	opacity: 1;
+}
+
+.breadcrumbs a.active {
+	color: #ff5151;
+}

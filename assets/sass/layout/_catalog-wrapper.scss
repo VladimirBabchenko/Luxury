@@ -1,0 +1,11 @@
+.catalog__wrapper {
+	display: flex;
+
+	.catalog-aside {
+		flex-basis: 230px;
+	}
+
+	.catalog-main {
+		flex-basis: 724px;
+	}
+}

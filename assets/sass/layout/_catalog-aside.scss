@@ -1,0 +1,137 @@
+.catalog-aside {
+	padding-right: 30px;
+}
+
+.catalog-aside__title {
+	padding: 10px 0;
+	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 15px;
+	font: 13px/1.2 sans-serif;
+	color: #4b4b4b;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.catalog-aside__price h3,
+.catalog-aside__popular h3 {
+	margin-top: 20px;
+}
+
+.catalog-aside__list {
+	font: 12px/23px sans-serif;
+	color: #898989;
+
+	a {
+		text-decoration: none;
+		color: #898989;
+	}
+}
+
+.catalog-aside__item {
+	display: flex;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px dashed #e2e2e2;
+
+	&:first-of-type {
+		padding-top: 0;
+	}
+
+	&:last-child {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+
+	h3 {
+		margin-top: 0;
+		font: 11px/18px sans-serif;
+		font-weight: bold;
+		color: #666666;
+		padding-bottom: 3px;
+	}
+
+	a {
+		display: block;
+	}
+}
+
+.catalog-aside__img-description {
+	padding-left: 11px;
+}
+
+.catalog-aside__image {
+	width: 60px;
+	height: 70px;
+	border: 2px solid #fff;
+	box-shadow: 0 0 2px #f2f2f2;
+	overflow: hidden;
+
+	img {
+	 max-width: inherit;
+	 height: auto;
+	}
+}
+
+.stars__block {
+	display: flex;
+	padding-bottom: 3px;
+
+	a:last-child span {
+		margin-right: 0;
+	}
+}
+
+.stars {
+	display: block;
+	width: 11px;
+	height: 11px;
+	margin-right: 3px;
+	background: url(../img/star.svg) center center no-repeat;
+}
+
+.catalog-aside__digitals {
+	color: #fe5252;
+}
+
+.catalog-aside__category .catalog-aside__list,
+.catalog-aside__price .catalog-aside__list {
+
+	a {
+		display: inline-block;
+		position: relative;
+		padding-left: 15px;
+		transition: all 400ms;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 3px;
+			height: 3px;
+			background-color: #b9b9b9;
+			left: 0;
+    	top: 9px;
+		}
+
+		&:hover {
+			opacity: 1;
+			color: #fe5252;
+			transform: translateX(5px);
+		}
+
+		&:hover::before {
+			opacity: 1;
+			background-color: #fe5252;
+		}
+	}
+}
+
+.catalog-aside__category .catalog-aside__list li {
+	transition: transform 400ms;	
+}
+
+.catalog-aside__category .catalog-aside__list li:hover {
+	
+}
+
+
+
