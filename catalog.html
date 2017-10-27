@@ -241,7 +241,7 @@
 			</ul>
 		</section>
 		<section class="catalog-aside__shopping">
-			<a href="#">Shop Now!</a>
+			<a href="#"><span>Shop Now!</span></a>
 		</section>
 	</aside> <!--End catalog-aside block-->
 
@@ -250,29 +250,130 @@
 
 	<main class="catalog-main">
 		<section class="catalog-slider">
-			<h3 class="catalog-slider__title">New Trend 2013</h3>
 			<input type="radio" name="catalog-slider" id="catalog-slider-1" checked="checked">
 			<input type="radio" name="catalog-slider" id="catalog-slider-2">
 			<input type="radio" name="catalog-slider" id="catalog-slider-3">
 			<div class="catalog-slider__images">
-				<img class="catalog-slider-1" src="assets/img/catalog-slider-1.jpg" alt="">
-				<img class="catalog-slider-2" src="assets/img/catalog-slider-2.jpg" alt="">
-				<img class="catalog-slider-3" src="assets/img/catalog-slider-3.jpg" alt="">
+				<div class="catalog-slider-1">
+					<a href="#"><h3 class="catalog-slider__title">New Trend 2013</h3></a>
+				</div>	
+				<div class="catalog-slider-2">
+					<a href="#"><h3 class="catalog-slider__title">New Trend 2014</h3></a>
+				</div>	
+				<div class="catalog-slider-3">
+					<a href="#"><h3 class="catalog-slider__title">New Trend 2015</h3></a>
+				</div>
 			</div>
-			<div catalog-slider__list>
-				<label for="catalog-slider-1" class="catalog-slider__item">
+
+			<label for="catalog-slider-1" class="catalog-slider__item">
+					New Products 
+			</label>
+			<label for="catalog-slider-2" class="catalog-slider__item">
 					New Products
-				</label>
-				<label for="catalog-slider-2">
+			</label>
+			<label for="catalog-slider-3" class="catalog-slider__item">
 					New Products
-				</label>
-				<label for="catalog-slider-3">
-					New Products
-				</label>
+			</label>
+		</section>
+
+		<section class="pagination">
+			<div class="display-buttons">
+				<button class="display__grid" type="button"></button>
+				<button class="display__list" type="button"></button>
 			</div>
+			<div class="display-selection">
+				<div class="display-selection__sorted-by">
+					<span>Sort by:</span>
+					<select name="display-sort">
+						<option value="default" selected="selected">Default</option>
+						<option value="price">Price</option>
+						<option value="popular">Popular</option>
+						<option value="rating">Rating</option>
+						<option value="sales">Sales</option>
+					</select>
+				</div>
+				<div class="display-selection__quantity">
+					<span>Show:</span>
+					<select name="display-quantity">
+						<option value="9 goods" selected="selected">09</option>
+						<option value="5 goods">06</option>
+						<option value="3 goods">03</option>
+					</select>
+				</div> 
+			</div>
+			<div class="pagination__pages">
+				<a href="#" class="pagination__pages-number pagination__pages-number-active">1</a>
+				<a href="#" class="pagination__pages-number">2</a>
+				<a href="#" class="pagination__pages-number">3</a>
+				<a href="#" class="pagination__pages-number">4</a>
+				<button type="button" class="pagination__arrow"></button>
+			</div> 
+		</section>
+
+		<section class="catalog-products">
+			<article class="featured-products__item">
+          <figure>            
+          </figure>
+          <div class="featured-products__item--appearing">
+            <div class="rounded_block">
+              <span>$30.00</span>
+            </div>
+            <div class="featured-products__rating">
+              <h3><a href="#">New Stella McCartney</a></h3>
+              <div class="featured-products__stars">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="featured-products__wishlist">
+              <a href="#">Add To Cart</a>
+              <div class="featured-products__added">
+                <a href="#">+Add To Wishlist</a>
+                <a href="#">+Add To Compare</a>
+              </div>
+            </div>
+          </div>
+        </article>
+		</section>
+
+		<section class="pagination pagination-bottom">
+			<div class="display-buttons">
+				<button class="display__grid" type="button"></button>
+				<button class="display__list" type="button"></button>
+			</div>
+			<div class="display-selection">
+				<div class="display-selection__sorted-by">
+					<span>Sort by:</span>
+					<select name="display-sort">
+						<option value="default" selected="selected">Default</option>
+						<option value="price">Price</option>
+						<option value="popular">Popular</option>
+						<option value="rating">Rating</option>
+						<option value="sales">Sales</option>
+					</select>
+				</div>
+				<div class="display-selection__quantity">
+					<span>Show:</span>
+					<select name="display-quantity">
+						<option value="9 goods" selected="selected">09</option>
+						<option value="5 goods">06</option>
+						<option value="3 goods">03</option>
+					</select>
+				</div> 
+			</div>
+			<div class="pagination__pages">
+				<a href="#" class="pagination__pages-number pagination__pages-number-active">1</a>
+				<a href="#" class="pagination__pages-number">2</a>
+				<a href="#" class="pagination__pages-number">3</a>
+				<a href="#" class="pagination__pages-number">4</a>
+				<button type="button" class="pagination__arrow"></button>
+			</div> 
 		</section>
 	</main> <!--End catalog-main block-->
-	</div>
+</div>
 <!--Footer
       ---------------------------------------------->
 
