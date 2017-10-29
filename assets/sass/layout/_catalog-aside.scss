@@ -137,7 +137,7 @@
 	margin-top: 25px;
 	padding-bottom: 28px;
 	border: 3px solid #fff;
-	background: url("../img/shopping.jpg") top left no-repeat;
+	background: url("../img/shopping.jpg") center center no-repeat;
 	box-shadow: 0 0 3px #f2f2f2;
 
 	a {
@@ -157,6 +157,131 @@
 		color: #fff;
 		font-size: 11px;
 		font-family: sans-serif;
+	}
+}
+
+@media (max-width: 835px) {
+	.catalog-aside {
+		padding-right: 15px;
+	}
+}
+
+@media (max-width: 734px) {
+	.catalog-aside {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.catalog-aside__price h3, .catalog-aside__popular h3 {
+		margin-top: 0;
+	}
+
+	.catalog-aside__shopping {
+		display: none;
+	}
+
+	.catalog-aside__category {
+		margin-right: 30px;
+	}
+
+	.catalog-aside__price {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.catalog__user-block {
+		align-items: flex-end;
+	}
+
+	.catalog-aside {
+		padding-right: 0;
+		flex-wrap: wrap;
+	}
+
+	.catalog-aside__popular {
+		flex-basis: 100%;
+
+		.catalog-aside__title {
+			text-align: center;
+		}
+	}
+
+	.catalog-aside__list {
+		justify-content: space-around;
+	}
+
+	.catalog-aside__popular .catalog-aside__list {
+		display: flex;
+	}
+
+	.catalog-aside {
+		justify-content: space-around;
+	}
+
+	.catalog-aside__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 0;
+		border-bottom: 0;
+		text-align: center;
+	}
+
+	.stars__block {
+		padding-left: 27px;
+	}
+
+	.catalog-aside__img-description {
+		padding-left: 10px;
+	}
+}
+
+@media (max-width: 401px) {
+	.catalog__user-block span {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 390px) {
+	.catalog__user-block span {
+		font-size: 10px;
+	}
+
+	.catalog-logo {
+		width: 82px;
+		height: 74px;
+		background-size: 164%;
+		padding-top: 38px;
+
+		span:first-child {
+			font-size: 13px;
+		}
+
+		span:last-child {
+			font-size: 8px;
+			line-height: 13px;
+			padding-top: 5px;
+			letter-spacing: 0.3px;
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	.catalog-aside__list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.catalog-aside__item {
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.stars__block {
+		padding-left: 0;
 	}
 }
 

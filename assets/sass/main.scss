@@ -1,5 +1,6 @@
 @import "helpers/_extends.scss";
 @import "helpers/_variables.scss";
+@import "layout/_mistake.scss";
 @import "layout/_header.scss";
 @import "layout/_slider.scss";
 @import "layout/_products.scss";
@@ -9,4 +10,6 @@
 @import "layout/_breadcrumbs.scss";
 @import "layout/_catalog-wrapper.scss";
 @import "layout/_catalog-aside.scss";
-@import "layout/_catalog-main.scss"
+@import "layout/_catalog-main.scss";
+@import "layout/_product-main.scss";
+@import "layout/_product-aside.scss";

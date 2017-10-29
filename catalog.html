@@ -13,12 +13,12 @@
 
 <header class="page-header">
   <div class="header__wrapper wrapper">
-    <a href="index.html" class="logo page-header__logo">
+    <a href="index.html" class="logo page-header__logo catalog-logo">
       <span>Luxury</span>
       <span>The Fashion</span>
     </a>
     <section class="page-header__content">
-      <div class="user-block">
+      <div class="user-block catalog__user-block">
           <div class="user-block__options">
             <p class="user-block__language">
               <span>Language: </span>
@@ -43,8 +43,8 @@
       -------------------------------------------->
       <!--<button class="main-nav__show" type="button">Открыть меню</button>-->
       <nav class="main-nav">
-        <ul class="main-nav__list">
-          <button class="main-nav__toggle" type="button">Закрыть меню
+        <ul class="main-nav__list catalog-main__list">
+          <button class="main-nav__toggle catalog-nav__toggle" type="button">Закрыть меню
             <span></span>
             <span></span>
             <span></span>
@@ -132,9 +132,55 @@
           </li>
         </ul>
         <div class="bucket-search">
-          <a class="search">Search</a>
-          <a class="bucket">Bucket</a>
+          <a class="search">
+            Search
+            <div class="search__block search__block--show">
+              <input type="search" placeholder="Search...">
+            </div>
+          </a>
+          <a class="bucket">
+            Bucket
+
+          </a>
           <span class="bucket__number">(0)</span>
+          <div class="bucket__block">
+            <div class="bucket__redline"></div>
+            <div class="bucket__content">
+              <p>Showing 2 of 2 items added </p>
+              <article class="bucket__item">
+                <img src="assets/img/bucket-1.jpg" alt="bucket-1">
+                <div class="bucket__title">
+                  <a href="#"><h3>Beautiful Croad</h3></a>
+                  <p>Size: <span>One size</span></p>
+                  <p>Quantity: <span>01</span></p>
+                </div>
+                <div class="bucket__price">
+                  <span>$30.00</span>
+                  <button type="reset"></button>
+                </div>
+              </article>
+              <article class="bucket__item">
+                <img src="assets/img/bucket-2.jpg" alt="bucket-1">
+                <div class="bucket__title">
+                  <a href="#"><h3>Beautiful Croad</h3></a>
+                  <p>Size: <span>One size</span></p>
+                  <p>Quantity: <span>01</span></p>
+                </div>
+                <div class="bucket__price">
+                  <span>$30.00</span>
+                  <button type="reset"></button>
+                </div>
+              </article>
+            </div>
+            <div class="bucket__total">
+              <p>Total excluding delivery: </p>
+              <p>$80.00</p>
+            </div>
+            <div class="bucket__buttons">
+              <a href="#">View Cart</a>
+              <a href="#">Continue To Checkout <span></span><span></span></a>
+            </div>
+          </div>
         </div>
       </nav><!--End main navigation-->
     </section>
@@ -312,57 +358,113 @@
 
 		<section class="catalog-products">
 			<article class="featured-products__item">
-          <figure>            
+        <a href="#" class="figure">
+          <figure>
+            <span>Hot</span>
           </figure>
-          <div class="featured-products__item--appearing">
-            <div class="rounded_block">
-              <span>$30.00</span>
-            </div>
-            <div class="featured-products__rating">
-              <h3><a href="#">New Stella McCartney</a></h3>
+        </a>
+        <div class="featured-products__item--appearing">
+           <div class="featured-products__rating">
+              <h3><a href="#">The Fashion For Winter</a></h3>
               <div class="featured-products__stars">
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
+                <a href="#">2 Review(s)</a>
+                <span> | </span>
+                <a href="#">Add You Review</a>
               </div>
-            </div>
-            <div class="featured-products__wishlist">
-              <a href="#">Add To Cart</a>
-              <div class="featured-products__added">
-                <a href="#">+Add To Wishlist</a>
-                <a href="#">+Add To Compare</a>
-              </div>
+           </div>
+           <p class="catalog-products__description">
+             Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue.
+           </p>
+           <div class="featured-products__wishlist">
+             <span class="price-main">$40</span>
+             <a href="#">Add To Cart</a>
+           </div>
+           <div class="featured-products__added">
+             <a href="#">Add To Wishlist</a>
+             <a href="#">Add To Compare</a>
+             <a href="#">Email To A Friend</a>
+           </div>
+         </div>
+      </article>
+      <article class="featured-products__item">
+        <a href="#" class="figure">
+          <figure>
+          </figure>
+        </a>
+        <div class="featured-products__item--appearing">
+          <div class="featured-products__rating">
+            <h3><a href="#">The Fashion For Winter</a></h3>
+            <div class="featured-products__stars">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#">2 Review(s)</a>
+              <span> | </span>
+              <a href="#">Add You Review</a>
             </div>
           </div>
-        </article>
+          <p class="catalog-products__description">
+            Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue.
+          </p>
+          <div class="featured-products__wishlist">
+            <span class="price-discount">$60.00</span>
+            <span class="price-main">$45</span>
+            <a href="#">Add To Cart</a>
+          </div>
+          <div class="featured-products__added">
+            <a href="#">Add To Wishlist</a>
+            <a href="#">Add To Compare</a>
+            <a href="#">Email To A Friend</a>
+          </div>
+        </div>
+      </article>
+      <article class="featured-products__item">
+        <a href="#" class="figure">
+          <figure>
+            <span>30% <strong>Off</strong></span>
+          </figure>
+        </a>
+        <div class="featured-products__item--appearing">
+          <div class="featured-products__rating">
+            <h3><a href="#">The Fashion For Winter</a></h3>
+            <div class="featured-products__stars">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#">2 Review(s)</a>
+              <span> | </span>
+              <a href="#">Add You Review</a>
+            </div>
+          </div>
+          <p class="catalog-products__description">
+            Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue.
+          </p>
+          <div class="featured-products__wishlist">
+            <span class="price-main">$40</span>
+            <a href="#">Add To Cart</a>
+          </div>
+          <div class="featured-products__added">
+            <a href="#">Add To Wishlist</a>
+            <a href="#">Add To Compare</a>
+            <a href="#">Email To A Friend</a>
+          </div>
+        </div>
+      </article>
 		</section>
 
 		<section class="pagination pagination-bottom">
 			<div class="display-buttons">
 				<button class="display__grid" type="button"></button>
 				<button class="display__list" type="button"></button>
-			</div>
-			<div class="display-selection">
-				<div class="display-selection__sorted-by">
-					<span>Sort by:</span>
-					<select name="display-sort">
-						<option value="default" selected="selected">Default</option>
-						<option value="price">Price</option>
-						<option value="popular">Popular</option>
-						<option value="rating">Rating</option>
-						<option value="sales">Sales</option>
-					</select>
-				</div>
-				<div class="display-selection__quantity">
-					<span>Show:</span>
-					<select name="display-quantity">
-						<option value="9 goods" selected="selected">09</option>
-						<option value="5 goods">06</option>
-						<option value="3 goods">03</option>
-					</select>
-				</div> 
 			</div>
 			<div class="pagination__pages">
 				<a href="#" class="pagination__pages-number pagination__pages-number-active">1</a>
@@ -374,6 +476,7 @@
 		</section>
 	</main> <!--End catalog-main block-->
 </div>
+
 <!--Footer
       ---------------------------------------------->
 

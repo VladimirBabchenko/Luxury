@@ -9,3 +9,9 @@
 		flex-basis: 724px;
 	}
 }
+
+@media (max-width: 734px) {
+	.catalog__wrapper {
+		display: grid;
+	}
+}
