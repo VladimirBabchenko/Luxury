@@ -239,6 +239,10 @@ ul {
   }
 }
 
+.bucket:hover {
+  opacity: 1;
+}
+
 .bucket-search a:first-of-type {
   .search__block {
     position: absolute;
@@ -484,6 +488,13 @@ ul {
   a:last-of-type:hover {
     background-image: linear-gradient(0deg, #fe5252, #fe7373);
     opacity: 1;
+  }
+}
+
+.bucket-search .search,
+.bucket-search .bucket {
+  &:hover {
+    box-shadow: none;
   }
 }
 
