@@ -160,6 +160,16 @@
 	}
 }
 
+@media (max-width: 838px) {
+	.catalog__user-block .user-block__options {
+		margin-bottom: 25px;
+	}
+
+	.catalog__main-nav {
+		margin-top: 27px;
+	}
+}
+
 @media (max-width: 835px) {
 	.catalog-aside {
 		padding-right: 15px;
@@ -247,7 +257,15 @@
 
 @media (max-width: 390px) {
 	.catalog__user-block span {
-		font-size: 10px;
+		font-size: 12px;
+	}
+
+	.catalog__main-nav {
+    margin-top: 15px;
+	}
+
+	.catalog__user-block .user-block__login {
+    margin-right: 0;
 	}
 
 	.catalog-logo {
@@ -283,6 +301,17 @@
 	.stars__block {
 		padding-left: 0;
 	}
+}
+
+@media (max-width: 340px) {
+	.catalog__user-block .user-block__language {
+    margin-right: 12px;
+	}
+
+	.catalog__user-block .user-block__login span {
+    padding-right: 5px;
+    padding-left: 5px;
+	} 
 }
 
 
