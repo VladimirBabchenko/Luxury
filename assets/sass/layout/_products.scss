@@ -374,8 +374,8 @@
 
   .featured-products__item:nth-child(2n) {
     margin-right: 0;
-  }    
-}
+  }
+}      
 
 @media (max-width: 487px) {
 	.featured-products__item:nth-child(3n) {
@@ -394,5 +394,19 @@
 
 	.featured-products__item:nth-child(3) figure span {
     width: 153px;
+	}
+
+	.featured-products__item {
+    flex-basis: 230px; 
+    height: 287px; 
+	}
+
+	.featured-products__item:nth-child(3) figure span {
+    left: -24%;
+	}
+
+	.featured-products__item:nth-child(8) figure span {
+    left: -24%;
+    top: -15px;
 	}
 }

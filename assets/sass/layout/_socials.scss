@@ -336,4 +336,14 @@
 	.socials__item:nth-child(2) {
     padding: 0 20px;
 	}
+
+	.socials__title {
+		display: block;
+		text-align: center;
+	}
+
+	.twitter__title,
+	.rumours__title {
+		margin-left: 0;
+	}
 }

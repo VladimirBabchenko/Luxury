@@ -160,6 +160,19 @@
 	}
 }
 
+.catalog-aside__category,
+.catalog-aside__price {
+	
+	select {
+		display:none;
+		padding: 5px;
+    padding-left: 10px;
+    background-color: #fe5252;
+    color: #fff;
+    font-weight: bold;
+	}
+}
+
 @media (max-width: 838px) {
 	.catalog__user-block .user-block__options {
 		margin-bottom: 25px;
@@ -247,6 +260,26 @@
 	.catalog-aside__img-description {
 		padding-left: 10px;
 	}
+
+	.catalog-aside__title {
+		text-align: center;
+	}
+
+	.catalog-aside__list {
+		display: none;
+	}
+
+	.catalog-aside__category,
+	.catalog-aside__price {
+	
+		select {
+			display: block;
+		}
+	}
+}
+
+.catalog-aside__popular {
+	margin-top: 25px;
 }
 
 @media (max-width: 401px) {
@@ -300,6 +333,20 @@
 
 	.stars__block {
 		padding-left: 0;
+	}
+}
+
+@media(max-width: 372px) {
+	.catalog-aside__category,
+	.catalog-aside__price {
+
+		select {
+			width: 140px;
+		}
+	}
+
+	.catalog-aside__category {
+    margin-right: 10px;
 	}
 }
 
