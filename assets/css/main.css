@@ -798,6 +798,9 @@ ul, .page-footer__wrapper .newsletter-content, .page-footer__wrapper a[href^="te
 .slider-mini {
   margin-bottom: 35px; }
 
+.main-nav__item a:hover {
+  opacity: 1; }
+
 @media (max-width: 1258px) {
   .slider__wrapper {
     width: 100%; }
