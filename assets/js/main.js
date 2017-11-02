@@ -10,7 +10,7 @@ mainNavButton.addEventListener("click", function(event) {
 // Search-block
 
 var search  = document.querySelector(".search");
-var searchBlock = document.getElementsByClassName("search__block")[0];
+var searchBlock = search.getElementsByClassName("search__block")[0];
 search.addEventListener("click", function(event) {
     event.preventDefault();
     searchBlock.classList.toggle("search__block--show");
